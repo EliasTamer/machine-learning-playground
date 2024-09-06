@@ -1,7 +1,3 @@
-# Machine Learning By Prof. Andrew Ng :star2::star2::star2::star2::star:
-
-This page contains all my YouTube/Coursera Machine Learning courses and resources :book: by [Prof. Andrew Ng](http://www.andrewng.org/) :man:
-
 # Table of Contents
 1. [Brief Intro](#brief-intro)
 
@@ -65,7 +61,6 @@ negative gradient (using a learning rate alpha)
 ### Bias and Variance
 When we discuss prediction models, prediction errors can be decomposed into two main subcomponents we care about: error due to "bias" and error due to "variance". There is a tradeoff between a model's ability to minimize bias and variance. Understanding these two types of error can help us diagnose model results and avoid the mistake of over- or under-fitting.
 
-Source: http://scott.fortmann-roe.com/docs/BiasVariance.html
 
 ### Hypotheis and Cost Function Table
 
