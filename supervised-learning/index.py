@@ -1,18 +1,18 @@
-import math, copy
 import numpy as np
-from gradient_descent import gradient_descent
+from multiple_variables_gradient_descent import gradient_descent
 
 
-x_train = np.array([1.0, 2.0])
-y_train = np.array([300.0, 500.0])
+X_train = np.array([[2104, 5, 1, 45], [1416, 3, 2, 40], [852, 2, 1, 35]])
+y_train = np.array([460, 232, 178])
 
-w_init = 0
-b_init = 0
-iterations = 10000
-tmp_alpha = 1.0e-2
+b_init = 785.1811367994083
+w_init = np.array([ 0.39133535, 18.75376741, -53.36032453, -26.42131618])
 
-# gradient_descent(x_train, y_train, w_init, b_init, tmp_alpha, iterations)
+initial_w = np.zeros_like(w_init)
+initial_b = 0.
 
-a = np.array([[1,2,4], [2,4,6]]) 
+iterations = 1000
+alpha = 5.0e-7
 
-print(a.shape)
+
+w_final, b_final, J_hist = gradient_descent(X_train, y_train, initial_w, initial_b, alpha, iterations)
