@@ -1,10 +1,9 @@
 import copy
 import math
-from multiple_variables_compute_gradient import compute_gradient
-from multiple_variables_compute_cost import cost_function
 
-import copy
-import math
+from multiple_variables_model import compute_gradient
+from multiple_variables_model import compute_cost
+
 
 
 def gradient_descent(X, y, w_in, b_in, alpha, num_iters): 
@@ -42,7 +41,7 @@ def gradient_descent(X, y, w_in, b_in, alpha, num_iters):
       
         # save cost J at each iteration
         if i<100000:      # prevent resource exhaustion 
-            J_history.append(cost_function(X, y, w, b))
+            J_history.append(compute_cost(X, y, w, b))
 
         # print cost every at intervals 10 times or as many iterations if < 10
         if i% math.ceil(num_iters / 10) == 0:
