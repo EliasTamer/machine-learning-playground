@@ -1,4 +1,4 @@
-from numpy import np
+import numpy as np
 
 # to make sure that the predictions of our classification model to be between 0 and 1
 def sigmoid(z):
