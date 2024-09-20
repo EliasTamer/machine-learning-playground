@@ -1,7 +1,7 @@
 import numpy as np
 from sigmoid import sigmoid
 
-def compute_cost_logistic(X, y, w, b):
+def compute_cost(X, y, w, b):
     """
     Computes cost
     Args:
