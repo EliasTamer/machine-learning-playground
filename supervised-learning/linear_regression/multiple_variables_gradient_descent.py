@@ -2,8 +2,8 @@ import copy
 import math
 
 
-from multiple_variables_model import compute_gradient
-from multiple_variables_model import compute_cost
+from linear_regression import compute_gradient
+from linear_regression import compute_cost
 
 import copy
 import math
