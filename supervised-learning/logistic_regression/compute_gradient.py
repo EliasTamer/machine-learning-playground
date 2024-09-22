@@ -1,7 +1,7 @@
 import numpy as np
 from sigmoid import sigmoid
 
-def compute_gradient(X, y, w, b): 
+def compute_gradient(X, y, w, b, *argv): 
     """
     Computes the gradient for logistic regression 
  
